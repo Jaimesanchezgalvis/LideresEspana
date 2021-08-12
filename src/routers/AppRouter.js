@@ -23,8 +23,8 @@ export const AppRouter = () => {
                     <Route exact path="/rvpplatinum" component={RvpPlatinumScreen} />
                     <Route exact path="/rvp" component={RvpScreen} />
                     <Route exact path="/rd" component={RdScreen} />
-                    <Route exact path="/" component={LideresScreen} />
-                    <Redirect to="/" />
+                    <Route exact path="/lider/:liderId" component={LideresScreen} />
+                    <Redirect to="/svp" />
                 </Switch>
                 </div>
             </>

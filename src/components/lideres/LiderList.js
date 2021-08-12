@@ -7,7 +7,7 @@ export const LiderList = ({ posicion }) => {
     const lideres = getLidersByPosition(posicion)
 
     return (
-        <div className="row row-cols-2 row-cols-md-3 g-4">
+        <div className="row row-cols-2 row-cols-md-3 g-4 animate__animated animate__fadeIn">
             {/* row = filas row-cols-2 = en vista mobil row-cols-md vista pc g-4 espacio  */}
             {
             lideres.map(lider=>(
