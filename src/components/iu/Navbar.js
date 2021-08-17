@@ -7,7 +7,7 @@ export const Navbar = () => {
      
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light" style={{ "backgroundColor": "#00437F" }}>
+            <nav className="navbar navbar-expand-lg navbar-light sticky-top" style={{ "backgroundColor": "#00437F" }}>
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style={{ "color": "white", "backgroundColor": "white" }}>
                         <span className="navbar-toggler-icon"></span>

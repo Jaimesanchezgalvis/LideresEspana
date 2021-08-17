@@ -42,8 +42,8 @@ export const LideresScreen = ( { history } ) => {
             <div className="col-8">
                 <h3>{nombre}</h3>
                 <ul className="list-group list-group-flush">
-                    <li className="list-group-item">Posicion: {posicion}</li>
-                    <li className="list-group-item">Profesion: {profesion}</li>
+                    <li className="list-group-item">Posición: {posicion}</li>
+                    <li className="list-group-item">Profesión: {profesion}</li>
                     <li className="list-group-item">Instagram: {instagram}</li>
                     <li className="list-group-item">Biografia: {biografia}</li>
                 </ul>
