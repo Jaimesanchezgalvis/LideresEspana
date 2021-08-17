@@ -20,7 +20,7 @@ export const LiderCard = ({
                         <h5 className="card-title">
                             {nombre}
                         </h5>
-                        <p>-{posicion}<br />-{profesion}<br />-{instagram}</p>
+                        <p>{posicion}<br />{profesion}<br />{instagram}</p>
                         <Link to={`./lider/${id}`}>
                             mas...
                         </Link>

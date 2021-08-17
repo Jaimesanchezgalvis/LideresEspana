@@ -54,6 +54,7 @@ export const LideresScreen = ( { history } ) => {
                 >
                     Regresar
                 </button>
+                <hr />
             </div>
         </div>
     )

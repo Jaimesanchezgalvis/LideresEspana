@@ -7,7 +7,7 @@ export const SvpScreen = () => {
     
     return (
         <div>
-            <h1>Svp</h1>
+            <h1>Senior Vicepresidente en España</h1>
             <hr />
             <LiderList posicion="Senior Vicepresidente"/>
             
