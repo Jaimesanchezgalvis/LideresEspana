@@ -1,12 +1,15 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { SearchScreen } from '../search/SearchScreen';
 
 export const Navbar = () => {
+
+     
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light" style={{ "background-color": "#00437F" }}>
+            <nav className="navbar navbar-expand-lg navbar-light" style={{ "backgroundColor": "#00437F" }}>
                 <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style={{ "color": "white", "background-color": "white" }}>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style={{ "color": "white", "backgroundColor": "white" }}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div
@@ -52,7 +55,8 @@ export const Navbar = () => {
                                 style={{ "color": "white" }}
                             >
                                 RVPs
-                            </NavLink><NavLink
+                            </NavLink>
+                            <NavLink
                                 activeClassName="active"
                                 className="nav-item nav-link"
                                 aria-current="page"
@@ -62,12 +66,17 @@ export const Navbar = () => {
                             >
                                 RDs
                             </NavLink>
-
+                            <NavLink
+                                activeClassName="active"
+                                className="nav-item nav-link"
+                                aria-current="page"
+                                exact
+                                to="/buscar"
+                                style={{ "color": "white" }}
+                            >
+                                Buscar
+                            </NavLink>
                         </ul>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
                     </div>
                 </div>
             </nav>

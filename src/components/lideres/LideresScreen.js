@@ -5,10 +5,7 @@ import { getLidersByid } from '../../selectors/getLidersByid'
 export const LideresScreen = ( { history } ) => {
 
     const { liderId } = useParams();
-    console.log(liderId)
-
     const lider = getLidersByid(liderId);
-    console.log(lider)
 
     if (!lider) {
         return <Redirect to="/" />

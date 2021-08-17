@@ -10,6 +10,7 @@ import { LideresScreen } from '../components/lideres/LideresScreen';
 import { RdScreen } from '../components/rd/RdScreen';
 import { RvpScreen } from '../components/rvp/RvpScreen';
 import { RvpPlatinumScreen } from '../components/rvpplatinum/RvpPlatinumScreen';
+import { SearchScreen } from '../components/search/SearchScreen';
 import { SvpScreen } from '../components/svp/SvpScreen';
 
 export const AppRouter = () => {
@@ -23,6 +24,8 @@ export const AppRouter = () => {
                     <Route exact path="/rvpplatinum" component={RvpPlatinumScreen} />
                     <Route exact path="/rvp" component={RvpScreen} />
                     <Route exact path="/rd" component={RdScreen} />
+                    <Route exact path="/rd" component={RdScreen} />
+                    <Route exact path="/buscar" component={SearchScreen} />
                     <Route exact path="/lider/:liderId" component={LideresScreen} />
                     <Redirect to="/svp" />
                 </Switch>
